@@ -1,0 +1,25 @@
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">New Comment</h1>
+    </div>
+    <div class="topcoat-navigation-bar__item right quarter mt2">
+        <a class="topcoat-icon-button blueBtn" href="#/">Home</a>
+    </div>
+</div>
+
+<div class="pad">
+    <div class="centerize">
+
+        <span class="topcoat-notification" ng-show="notification!=null" ng-hide="notification==null">{{notification}}</span>
+        <div class="mt1"></div>
+        <form ng-submit="addNewComment()" role="form">
+            <label>Name</label><br>
+            <input type="text" class="topcoat-text-input" value="" ng-model="name">
+            <div class="mt1"></div>
+            <label>Comment</label><br>
+            <textarea class="topcoat-textarea" rows="1" cols="30" ng-model="comment"></textarea>
+            <br><br>
+            <button type="submit" class="topcoat-button--cta" >Submit</button>
+        </form>
+    </div>
+</div>

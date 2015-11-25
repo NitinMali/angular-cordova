@@ -1,0 +1,19 @@
+<div class="topcoat-navigation-bar list-fix-nav">
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Comments</h1>
+    </div>
+    <div class="topcoat-navigation-bar__item right quarter mt2">
+        <a class="topcoat-icon-button blueBtn" href="#/new">New</a>
+    </div>
+</div>
+
+<div class="topcoat-list__container list list-fix-container">
+    <ul class=topcoat-list>
+        <li ng-repeat="comment in comments" class="topcoat-list__item">
+            <p><span>{{comment.text}}</span></p>
+            <p><b>{{comment.name}}</b></p>
+        </li>
+    </ul>
+</div>
+
+
